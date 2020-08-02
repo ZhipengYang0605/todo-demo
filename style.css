@@ -1,0 +1,112 @@
+.todo-box {
+    position: relative;
+    height: 100vh;
+}
+
+/* 头部 */
+.header-box {
+    width: 100wv;
+    height: 0.5rem;
+    background: #000;
+    padding: 0 0.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text {
+    color: #fff;
+    font-size: 0.3rem;
+}
+
+.input-box {
+    height: 0.5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-box .input {
+    display: block;
+    width: 2rem;
+    height: 0.25rem;
+    outline: none;
+    border-radius: 0.1rem;
+    padding-left: 0.1rem;
+}
+
+/* 待做 */
+.doing,
+.done {
+    margin-top: 0.2rem;
+    font-size: 0.18rem;
+    padding: 0 0.1rem;
+}
+
+.done-title,
+.doing-title {
+    color: #fff;
+    background: #000;
+    display: inline-block;
+    padding: 0.05rem 0.1rem;
+    border-radius: 0.1rem;
+    margin-bottom: 0.1rem;
+    font-size: 0.2rem;
+}
+
+.done-title {
+    margin-top: 0.2rem;
+    background: green;
+    color: #fff;
+}
+
+.checkbox {
+    height: 0.16rem;
+    width: 0.16rem;
+    vertical-align: center;
+}
+
+.done-item,
+.doing-item {
+    background: #ccc;
+    margin-bottom: 0.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.05rem 0.1rem;
+    border-radius: 0.1rem;
+    font-size: 0.16rem;
+}
+
+.done-item {
+    -webkit-filter: grayscale(100%);
+    /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+
+.del {
+    color: #fff;
+    display: inline-block;
+    padding: 0.02rem 0.05rem;
+    border-radius: 0.08rem;
+    font-size: 0.12rem;
+    cursor: pointer;
+    background: red;
+    border: none;
+}
+
+.done-item {
+    opacity: 0.5;
+}
+
+/* 页脚部分 */
+.footer-box {
+    position: absolute;
+    font-size: 0.12rem;
+    color: #666;
+    width: 80vw;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    bottom: 0.5rem;
+}
